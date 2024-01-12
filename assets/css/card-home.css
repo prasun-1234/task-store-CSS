@@ -1,0 +1,279 @@
+.card-section {
+  width: 100%;
+  height: auto;
+}
+.main-card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+.main-card-section .main-card-header {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+}
+.main-card-section .main-grid-box {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.main-card-section .grid-span {
+  position: absolute;
+  width: 100%;
+  height: 18rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18rem;
+  z-index: 10;
+  background: linear-gradient(180deg, #020617 2.83%, rgba(2, 6, 23, 0) 100.87%);
+}
+.main-grid-box .grid-box {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  height: auto;
+  position: relative;
+}
+.grid-box .task-card {
+  position: relative;
+  display: grid;
+  grid-column: span 4 / span 4;
+  padding: 1px;
+  border-radius: 20px;
+  height: auto;
+  overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgba(144, 144, 144, 1) 50%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+.grid-box .task-card .task-card-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 20px;
+  gap: 1.5rem;
+  background: #020617;
+  padding: 12px;
+  transition: 0.3s ease-in-out;
+}
+.task-card-inner .task-card-header {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #fff;
+}
+.task-card .task-card-inner .content-main {
+  display: flex;
+  justify-content: space-between;
+}
+.task-card-inner .content-main .left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.content-main .left-content .button-box {
+  display: flex;
+  justify-content: start;
+  gap: 0.94rem;
+}
+.left-content .button-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+.left-content .button-box .bg-org {
+  background-color: #fb923c;
+}
+.left-content .button-box .bg-green {
+  background-color: #0e7490;
+}
+.content-main .left-content .left-content-para {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.0625rem;
+  color: #cbd5e1;
+  max-width: 20.2rem;
+}
+.content-main .arrow-mark {
+  display: flex;
+  align-items: center;
+}
+.custom-div {
+  background: rgb(144, 144, 144);
+  background: radial-gradient(
+    circle,
+    rgba(144, 144, 144, 1) 50%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  padding: 1px;
+}
+.task-card:hover .custom-div {
+  opacity: 0;
+}
+.task-card-inner .time-price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-card-inner .time-price-box .time-text {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.0625rem;
+  color: #fff;
+}
+.task-card-inner .time-price-box .price-text {
+  text-align: right;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 200%;
+  color: #fff;
+}
+.task-card .cart-tag {
+  position: absolute;
+  bottom: 2px; 
+  display: flex;
+  justify-content: center;
+  font-size: 1rem; 
+  width: 100%;
+  border-bottom-left-radius: 1.25rem; 
+  border-bottom-right-radius: 1.25rem; 
+  padding-top: 1.62rem; 
+  padding-right: 5rem; 
+  padding-bottom: 1.62rem; 
+  padding-left: 5rem; 
+  background-color: #ea580c;
+  text-decoration: none;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(105%);
+}
+.cart-tag .cart-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #fff;
+  
+}
+.task-card:hover .cart-tag {
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 1922px) {
+  .card-section {
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .main-grid-box .grid-box {
+    column-gap: 2.5rem;
+    row-gap: 2.62rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card-section {
+    margin-top: 5rem;
+  }
+  .main-card-section {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .main-card-section .main-card-header {
+    font-size: 3rem;
+  }
+  .main-grid-box .grid-box {
+    column-gap: 1rem;
+    row-gap: 1.6rem;
+  }
+  .grid-box .task-card {
+    grid-column: span 4 / span 4;
+  }
+  .grid-box .task-card .task-card-inner {
+    padding: 1.31rem 2.25rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .card-section {
+    margin-top: 5rem;
+  }
+  .main-card-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .main-grid-box .grid-box {
+    row-gap: 2rem;
+  }
+  .grid-box .task-card .task-card-inner {
+    padding: 1.3rem 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-section {
+    margin-top: 2.5rem;
+  }
+  .main-card-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .main-grid-box .grid-box {
+    row-gap: 2rem;
+  }
+  .grid-box .task-card .task-card-inner {
+    padding: 1.3rem 1.5rem;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .card-section {
+    margin-top: 2.5rem;
+  }
+  .main-card-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .main-grid-box .grid-box {
+    row-gap: 2rem;
+  }
+  .grid-box .task-card .task-card-inner {
+    padding: 1.3rem 1.5rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  .card-section {
+    margin-top: 2.5rem;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 479px) {
+}
+@media only screen and (min-width: 375px) and (max-width: 419px) {
+}
+@media only screen and (min-width: 275px) and (max-width: 375px) {
+}
