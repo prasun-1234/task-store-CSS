@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/login-page/login-page.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="sticky-aside">
+            <nav class="side-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-items ">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
+                                viewBox="0 0 45 44" fill="none">
+                                <g opacity="1">
+                                    <path d="M13.3334 16.5H15.1667V18.3333H13.3334V16.5Z" fill="white" />
+                                    <path d="M15.1667 14.6666H17V16.5H15.1667V14.6666Z" fill="white" />
+                                    <path d="M9.66669 20.1666H11.5V22H9.66669V20.1666Z" fill="white" />
+                                    <path d="M33.5 20.1666H35.3334V22H33.5V20.1666Z" fill="white" />
+                                    <path d="M31.6667 18.3333H33.5V20.1666H31.6667V18.3333Z" fill="white" />
+                                    <path d="M29.8334 16.5H31.6667V18.3333H29.8334V16.5Z" fill="white" />
+                                    <path d="M28 14.6666H29.8334V16.5H28V14.6666Z" fill="white" />
+                                    <path d="M26.1667 12.8333H28V14.6666H26.1667V12.8333Z" fill="white" />
+                                    <path d="M24.3334 11H26.1667V12.8333H24.3334V11Z" fill="white" />
+                                    <path d="M18.8334 11H20.6667V12.8333H18.8334V11Z" fill="white" />
+                                    <path d="M17 12.8333H18.8334V14.6666H17V12.8333Z" fill="white" />
+                                    <path d="M11.5 18.3333H13.3334V20.1666H11.5V18.3333Z" fill="white" />
+                                    <path d="M13.3334 22H11.5V33H13.3334V22Z" fill="white" />
+                                    <path d="M13.3334 33V34.8333H18.8334V33H13.3334Z" fill="white" />
+                                    <path d="M18.8334 33H20.6667V27.5H18.8334V33Z" fill="white" />
+                                    <path d="M20.6667 25.6666V27.5H24.3334V25.6666H20.6667Z" fill="white" />
+                                    <path d="M26.1667 27.5H24.3334V33H26.1667V27.5Z" fill="white" />
+                                    <path d="M26.1667 33V34.8333H31.6667V33H26.1667Z" fill="white" />
+                                    <path d="M31.6667 33H33.5V22H31.6667V33Z" fill="white" />
+                                    <path d="M24.3334 9.16663H20.6667V11H24.3334V9.16663Z" fill="white" />
+                                </g>
+                            </svg>
+                            <p class="text-center hidden lg:block xl:block">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-list-items">
+                        <span class="notification">New</span>
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
+                                viewBox="0 0 45 44" fill="none">
+                                <path d="M9.05554 33.6111H10.8889V20.7778H9.05554V33.6111Z" fill="white" />
+                                <path
+                                    d="M18.2222 9.77779H16.3889V18.9445H10.8889V20.7778H16.3889V26.2778H18.2222V9.77779Z"
+                                    fill="white" />
+                                <path
+                                    d="M23.7222 33.6111H25.5555V28.1111H34.7222V26.2778H18.2222V28.1111H23.7222V33.6111Z"
+                                    fill="white" />
+                                <path d="M10.8889 33.6111V35.4445H23.7222V33.6111H10.8889Z" fill="white" />
+                                <path d="M36.5555 9.77779H34.7222V26.2778H36.5555V9.77779Z" fill="white" />
+                                <path d="M18.2222 7.94446V9.77779H34.7222V7.94446H18.2222Z" fill="white" />
+                            </svg>
+                            <p class="sidenav-title">Shopify Task</p>
+                        </a>
+                    </li>
+                    <li class="nav-list-items">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
+                                viewBox="0 0 45 44" fill="none">
+                                <g opacity="1">
+                                    <path d="M17 25.6666H18.8334V27.5H17V25.6666Z" fill="white" />
+                                    <path d="M28 25.6666H26.1667V27.5H28V25.6666Z" fill="white" />
+                                    <path d="M17 16.5H18.8334V18.3333H17V16.5Z" fill="white" />
+                                    <path d="M28 16.5H26.1667V18.3333H28V16.5Z" fill="white" />
+                                    <path d="M18.8334 18.3333H20.6667V20.1666H18.8334V18.3333Z" fill="white" />
+                                    <path d="M26.1667 18.3333H24.3334V20.1666H26.1667V18.3333Z" fill="white" />
+                                    <path d="M15.1667 18.3333H17V20.1666H15.1667V18.3333Z" fill="white" />
+                                    <path d="M29.8334 18.3333H28V20.1666H29.8334V18.3333Z" fill="white" />
+                                    <path d="M17 33V34.8333H28V33H17Z" fill="white" />
+                                    <path d="M26.1667 29.3333V27.5H18.8334V29.3333H26.1667Z" fill="white" />
+                                    <path d="M13.3334 31.1666V33H17V31.1666H13.3334Z" fill="white" />
+                                    <path d="M13.3334 27.5H11.5V31.1666H13.3334V27.5Z" fill="white" />
+                                    <path d="M9.66669 27.5H11.5V16.5H9.66669V27.5Z" fill="white" />
+                                    <path d="M11.5 16.5H13.3334V12.8333H11.5L11.5 16.5Z" fill="white" />
+                                    <path d="M13.3334 11V12.8333H17V11H13.3334Z" fill="white" />
+                                    <path d="M17 9.16663V11H28V9.16663H17Z" fill="white" />
+                                    <path d="M31.6667 12.8333V11H28V12.8333H31.6667Z" fill="white" />
+                                    <path d="M31.6667 16.5H33.5V12.8333H31.6667V16.5Z" fill="white" />
+                                    <path d="M33.5 27.5H35.3334V16.5H33.5V27.5Z" fill="white" />
+                                    <path d="M33.5 27.5H31.6667V31.1666H33.5V27.5Z" fill="white" />
+                                    <path d="M31.6667 33V31.1666H28V33H31.6667Z" fill="white" />
+                                </g>
+                            </svg>
+                            <p class="sidenav-title">
+                                Hire your own Team
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-list-items">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
+                                viewBox="0 0 45 44" fill="none">
+                                <g opacity="1">
+                                    <path d="M31.6667 13.4445H33.5V15.2778H31.6667V13.4445Z" fill="white" />
+                                    <path d="M29.8334 11.6111H31.6667V13.4445H29.8334V11.6111Z" fill="white" />
+                                    <path d="M28 9.77779H29.8334V11.6111H28V9.77779Z" fill="white" />
+                                    <path d="M15.1667 9.77779H17V11.6111H15.1667V9.77779Z" fill="white" />
+                                    <path d="M13.3334 11.6111H15.1667V13.4445H13.3334V11.6111Z" fill="white" />
+                                    <path d="M11.5 13.4445H13.3334V15.2778H11.5V13.4445Z" fill="white" />
+                                    <path
+                                        d="M11.5 33.6111H13.3334V26.2778H11.5V15.2778H9.66669V26.2778V28.1111H11.5V33.6111Z"
+                                        fill="white" />
+                                    <path d="M18.8334 26.2778V24.4445H13.3334V26.2778H18.8334Z" fill="white" />
+                                    <path d="M18.8334 33.6111H20.6667V26.2778H18.8334V33.6111Z" fill="white" />
+                                    <path d="M18.8334 35.4445V33.6111H13.3334V35.4445H18.8334Z" fill="white" />
+                                    <path d="M24.3334 33.6111H26.1667V26.2778H24.3334V33.6111Z" fill="white" />
+                                    <path d="M26.1667 24.4445V26.2778H31.6667V24.4445H26.1667Z" fill="white" />
+                                    <path d="M26.1667 33.6111V35.4445H31.6667V33.6111H26.1667Z" fill="white" />
+                                    <path d="M28 9.77779V7.94446H17V9.77779H28Z" fill="white" />
+                                    <path
+                                        d="M31.6667 33.6111H33.5V28.1111H35.3334V15.2778H33.5V26.2778H31.6667V33.6111Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            <p class="hidden lg:block xl:block">Support</p>
+                        </a>
+                    </li>
+                    <li class="nav-list-items ">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
+                                viewBox="0 0 45 44" fill="none">
+                                <g opacity="1">
+                                    <path d="M29.8338 10.9998L28.0005 10.9998V12.8332L29.8338 12.8332V10.9998Z"
+                                        fill="white" />
+                                    <path d="M15.1672 31.1665L17.0005 31.1665V32.9998L15.1672 32.9998V31.1665Z"
+                                        fill="white" />
+                                    <path d="M28.0005 10.9998V9.16651L11.5005 9.1665V10.9998L28.0005 10.9998Z"
+                                        fill="white" />
+                                    <path
+                                        d="M11.5005 10.9998L9.66718 10.9998L9.66718 16.4998L11.5005 16.4998L11.5005 10.9998Z"
+                                        fill="white" />
+                                    <path
+                                        d="M15.1672 12.8332L13.3338 12.8332L13.3338 16.4998L11.5005 16.4998L11.5005 18.3332H13.3338L13.3338 31.1665H15.1672L15.1672 12.8332Z"
+                                        fill="white" />
+                                    <path d="M26.1672 18.3332V16.4998H18.8338V18.3332L26.1672 18.3332Z" fill="white" />
+                                    <path d="M22.5005 23.8332V21.9998H18.8338V23.8332L22.5005 23.8332Z" fill="white" />
+                                    <path
+                                        d="M18.8338 27.4998L18.8338 29.3332H33.5005V27.4998H31.6672L31.6672 12.8332L29.8338 12.8332L29.8338 27.4998L18.8338 27.4998Z"
+                                        fill="white" />
+                                    <path d="M35.3338 29.3332H33.5005V32.9998L35.3338 32.9998V29.3332Z" fill="white" />
+                                    <path d="M17.0005 32.9998V34.8332L33.5005 34.8332V32.9998H17.0005Z" fill="white" />
+                                </g>
+                            </svg>
+                            <p class="hidden lg:block xl:block">journal</p>
+                        </a>
+                    </li>
+                    <li class="nav-list-items ">
+                        <a href="#" class="nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
+                                viewBox="0 0 45 44" fill="none">
+                                <g opacity="1">
+                                    <path d="M18.8333 11H20.6666V12.8334H18.8333V11Z" fill="white" />
+                                    <path d="M26.1666 11H24.3333V12.8334H26.1666V11Z" fill="white" />
+                                    <path d="M11.5 11H13.3333V12.8334H11.5V11Z" fill="white" />
+                                    <path d="M33.5 11H31.6666V12.8334H33.5V11Z" fill="white" />
+                                    <path d="M9.66665 12.8334H11.5V14.6667H9.66665V12.8334Z" fill="white" />
+                                    <path d="M35.3333 12.8334H33.5V14.6667H35.3333V12.8334Z" fill="white" />
+                                    <path d="M9.66665 22H11.5V23.8334H9.66665V22Z" fill="white" />
+                                    <path d="M35.3333 22H33.5V23.8334H35.3333V22Z" fill="white" />
+                                    <path d="M17 29.3334H18.8333V31.1667H17V29.3334Z" fill="white" />
+                                    <path d="M28 29.3334H26.1666V31.1667H28V29.3334Z" fill="white" />
+                                    <path d="M18.8333 31.1667H20.6666V33H18.8333V31.1667Z" fill="white" />
+                                    <path d="M26.1666 31.1667H24.3333V33H26.1666V31.1667Z" fill="white" />
+                                    <path d="M15.1666 27.5H17V29.3334H15.1666V27.5Z" fill="white" />
+                                    <path d="M29.8333 27.5H28V29.3334H29.8333V27.5Z" fill="white" />
+                                    <path d="M13.3333 25.6667H15.1666V27.5H13.3333V25.6667Z" fill="white" />
+                                    <path d="M31.6666 25.6667H29.8333V27.5H31.6666V25.6667Z" fill="white" />
+                                    <path d="M11.5 23.8334H13.3333V25.6667H11.5V23.8334Z" fill="white" />
+                                    <path d="M33.5 23.8334H31.6666V25.6667H33.5V23.8334Z" fill="white" />
+                                    <path d="M13.3333 9.16669V11H18.8333V9.16669H13.3333Z" fill="white" />
+                                    <path d="M31.6666 11V9.16669H26.1666V11H31.6666Z" fill="white" />
+                                    <path d="M35.3333 22H37.1666V14.6667H35.3333V22Z" fill="white" />
+                                    <path d="M7.83331 22H9.66665V14.6667H7.83331V22Z" fill="white" />
+                                    <path d="M20.6666 33V34.8334H24.3333V33H20.6666Z" fill="white" />
+                                    <path d="M20.6666 12.8334V14.6667H24.3333V12.8334H20.6666Z" fill="white" />
+                                </g>
+                            </svg>
+                            <p class="hidden lg:block xl:block">About</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-section">
+
+
+            <section class="login-container">
+                <div class="login-img-div">
+                    <img src="/assets/images/login-img.png" alt="" class="">
+                </div>
+                <div class="login-form-div">
+                    <div class="login-input-div">
+                        <h3>Login to your account..</h3>
+
+                        <form action="post" class="form-group">
+                            <label id="first-name-label" for="first-name">
+                                <span>Email Address </span>
+                                <input type="text" id="first-name" aria-labelledby="first-name" required />
+                                <p>
+                                    <img src="/assets/images/ex-mark.png" alt="">
+                                    Please provide a valid input
+                                </p>
+                            </label>
+
+                            <button class="form-group-login-btn">
+                                LOGIN
+                            </button>
+                        </form>
+                        <div class="link-group">
+                            <a href="#">
+                                Forgot Password?
+                            </a>
+                            <a href="#">
+                                <span>New User ?</span>
+                                Create an Account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+</body>
+
+</html>

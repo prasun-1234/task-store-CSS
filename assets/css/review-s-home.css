@@ -1,0 +1,132 @@
+.review-section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.main-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1.44rem;
+  background-color: #0f172a;
+  height: auto;
+  width: 100%;
+}
+.main-review .review-header-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.review-header-box .review-header {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+  text-align: center;
+}
+.review-header-box .review-para {
+  color: #cbd5e1;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 1.8rem */
+  letter-spacing: 0.0625rem;
+}
+.main-review .review-box {
+  display: grid;
+  /*  */
+}
+.review-box .review-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  grid-column: span 12 / span 12;
+}
+.review-cards .star-box {
+  display: flex;
+}
+.review-cards .review {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #fff;
+  text-align: center;
+}
+.review-cards .review-name {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.0625rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 1922px) {
+  .main-review {
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .review-section{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .main-review {
+    padding: 6.4rem 5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .review-section {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .main-review {
+    padding: 6.4rem 3rem;
+    gap: 5rem;
+
+
+  }
+  .review-header-box .review-header {
+    font-size: 3rem;
+  }
+  .review-header-box .review-para {
+    max-width: 34rem;
+  }
+  .review-box {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .review-box .review-cards {
+    grid-column: span 4 / span 4;
+  }
+  .review-cards .review {
+    max-width: 30.8rem;
+    font-size: 1.5rem;
+  }
+  .main-review .review-box{
+    column-gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .review-box {
+    row-gap: 2.5rem;
+  }
+  .main-review{
+    gap: 2rem;
+  }
+}

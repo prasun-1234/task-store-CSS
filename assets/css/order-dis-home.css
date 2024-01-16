@@ -75,9 +75,9 @@
   line-height: 160%;
   color: #fff;
 }
-.cards-wrapper .cards-upper .upper-img{
-    max-width: 100%;
-    height: auto;
+.cards-wrapper .cards-upper .upper-img {
+  max-width: 100%;
+  height: auto;
 }
 .cards-wrapper .cards .cards-lower {
   display: flex;
