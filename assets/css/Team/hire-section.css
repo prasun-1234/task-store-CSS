@@ -1,0 +1,75 @@
+.hire-section {
+  width: 100%;
+  height: auto;
+}
+.hire-main-div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 2.5rem;
+}
+.hire-main-div .hire-grid {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  opacity: 0.5;
+  transition: .2s ease-in-out;
+}
+.hire-main-div .hire-grid:hover {
+  -webkit-box-shadow: 0px 0 0 2px #6DFFC1;
+  -moz-box-shadow: 0px 0 0 2px #6DFFC1;
+  box-shadow: 0px 0 0 2px #6DFFC1;
+  opacity: 1;
+}
+.hire-grid-gradient {
+  width: 26.5rem;
+  height: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hire-main-div .hire-grid .hire-grid-gradient h6 {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #fff;
+}
+.designer {
+  background: url("/assets/images/writing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.developer {
+  background: url("/assets/images/developer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.consult {
+  background: url("/assets/images/consult.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1280px) {
+  .hire-section {
+    margin-top: 3.12rem;
+  }
+  .hire-main-div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 3.75rem 0 3.75rem;
+    column-gap: 3.5rem;
+  }
+  .hire-main-div .hire-grid {
+    max-width: 26.8rem;
+    max-height: 26.8rem;
+  }
+  .hire-main-div .hire-grid .hire-grid-gradient h6 {
+    font-size: 1.5rem;
+  }
+}
