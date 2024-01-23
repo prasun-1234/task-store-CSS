@@ -11,8 +11,8 @@
   gap: 2.5rem;
 }
 .hire-main-div .hire-grid {
-  width: 19.5rem;
-  height: 19.5rem;
+  width: 21.5rem;
+  height: 21.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,5 +98,23 @@
   .hire-main-div .hire-grid {
     max-width: 17.5rem;
     max-height: 17.5rem;
+  }
+}
+
+@media screen and (min-width:420px) and (max-width:639px) {
+  .hire-main-div{
+    margin-top: 2.5rem;
+
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+@media screen and (min-width:320px) and (max-width:419px) {
+  .hire-main-div{
+    margin-top: 2.5rem;
+    padding: 0 1.25rem 0 1.25rem;
+  }
+  .hire-main-div .hire-grid {
+    width: 19.5rem;
+  height: 19.5rem;
   }
 }

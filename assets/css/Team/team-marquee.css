@@ -38,3 +38,13 @@
     font-size: 12rem;
   }
 }
+@media screen and (min-width:420px ) and (max-width:639px) {
+  .team-marquee-section{
+    margin-top: 1.25rem;
+  }
+}
+@media screen and (min-width:320px ) and (max-width:419px) {
+  .team-marquee-section{
+    margin-top: 1.25rem;
+  }
+}

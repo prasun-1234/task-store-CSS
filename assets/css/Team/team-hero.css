@@ -103,3 +103,7 @@
     max-height: 34.4rem;
   }
 }
+
+@media screen and (min-width:420px) and (max-width:639px){
+  
+}
