@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="/assets/css/Team/team-hero.css" />
     <link rel="stylesheet" href="/assets/css/Team/team-marquee.css" />
     <link rel="stylesheet" href="/assets/css/Team/hire-section.css" />
-    <link rel="stylesheet" href="/assets/css/Team/showcase.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/Team/showcase.css" />
     <link rel="stylesheet" href="/assets/css/Team/challenge.css" />
     <link rel="stylesheet" href="/assets/css/Team/hire-modal.css">
+    <link rel="stylesheet" href="/assets/css/Team/search-modal.css">
 </head>
 
 <body>
@@ -293,7 +294,7 @@
                     </ul>
                     <ul class="header-logo-list">
                         <li>
-                            <a href="#" class=" ">
+                            <a href="#" id="s-i" class=" ">
                                 <svg width="45" height="44" class="head-ul-logo" viewBox="0 0 45 44" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.1148 12.8333H13.2815V11L15.1148 11V12.8333Z" fill="white" />
@@ -367,12 +368,8 @@
                     </ul>
                 </div>
             </header>
-            <dialog>
-                <button autofocus>Close</button>
-                <p>This modal dialog has a groovy backdrop!</p>
-            </dialog>
-            <button>Show the dialog</button>
-            <!-- <section class="team-hero-section ">
+
+            <section class="team-hero-section ">
                 <div class="team-hero-main ">
                     <div class="team-video-div ">
                         <img src="/assets/images/test-video.png" alt="">
@@ -384,15 +381,15 @@
                         </h3>
                     </span>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="team-marquee-section">
+            <section class="team-marquee-section">
                 <div class="team-marquee-main">
                     <h3>Work->Dream</h3>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="hire-section">
+            <section class="hire-section">
                 <div class="hire-main-div">
                     <div class="hire-grid  designer">
                         <h6 class="">Hire Designer</h6>
@@ -404,7 +401,97 @@
                         <h6 class="">Hire Designer</h6>
                     </div>
                 </div>
-            </section> -->
+                <dialog>
+                    <div class="dialog-main ">
+                        <div class="hire-dialog-img">
+                            <div class="hire-dialog-content">
+                                <div class="content-close-btn">
+                                    <button autofocus id="close-btn">
+                                        <p class="">Close</p>
+                                        <img src="/assets/images/Close.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="dialog-content-header">
+                                    <img src="/assets/images/supashop-logo.svg" alt="">
+                                    <h4 class="">Your own Shopify Design & Development Team</h4>
+                                </div>
+                                <div class="dialog-content-slider">
+                                    <div class="content-star">
+                                        <img src="/assets/images/Star.svg" alt="">
+                                        <img src="/assets/images/Star.svg" alt="">
+                                        <img src="/assets/images/Star.svg" alt="">
+                                        <img src="/assets/images/Star.svg" alt="">
+                                        <img src="/assets/images/Star.svg" alt="">
+                                    </div>
+                                    <div class="slider-content">
+                                        <button class="">
+                                            <img src="/assets/images/left-arrow.png" alt="">
+                                        </button>
+                                        <h6 class="">“Enim blandit volutpat maecenas volutpat blandit
+                                            aliquam etiam erat velit. Mi in nulla posuere sollicitudin
+                                            aliquam ultrices,volutpat maecenas volutpat blandit aliquam
+                                            etiam erat velit.”
+                                        </h6>
+                                        <button class="">
+                                            <img src="/assets/images/right-arrow.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="hire-dialog-form ">
+                            <div class="form-close-btn">
+                                <button autofocus id="close-btn-lg">
+                                    <p class="">Close</p>
+                                    <img src="/assets/images/Close.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="form-content">
+                                <h4 class="">Hire your Team</h4>
+                                <form action="#">
+                                    <label>
+                                        <span>Email Address</span>
+                                        <input type="email">
+                                    </label>
+                                    <label>
+                                        <span>Task Type</span>
+                                        <select name="select-input" id="task-select">
+                                            <option value="">Development</option>
+                                            <option value="">Design</option>
+                                            <option value="">consult</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <span>Task Name</span>
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        <span>Shopify Store Url</span>
+                                        <input type="url">
+                                    </label>
+                                    <label>
+                                        <span>Platform</span>
+                                        <select name="select-input" id="task-select">
+                                            <option value="">platform 1</option>
+                                            <option value="">platform 2</option>
+                                            <option value="">platform 3</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <span>Shopify Store Url</span>
+                                        <textarea name="textarea" id="modal-comment-box" cols="30" rows="10"></textarea>
+                                    </label>
+                                    <button class="free-quote-btn">
+                                        Get a Free Quote
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+            </section>
 
             <!-- <section class="task-showcase-section">
                 <div class="main-task-showcase">
@@ -467,13 +554,13 @@
                 </div>
             </section> -->
 
-            <!-- <section class="challenge-section">
+            <section class="challenge-section">
                 <div class="main-challenge-section">
                     <div class="challenge-video-content">
                         <div class="challenge-video">
                             <span class="video-icon-span">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="video-icon-svg" width="76" height="177" viewBox="0 0 76 177"
-                                    fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="video-icon-svg" width="76" height="177"
+                                    viewBox="0 0 76 177" fill="none">
                                     <path
                                         d="M70.0856 0.671718L0.506894 93.139L38.0004 96.1878L9.52644 176.328L75.9833 77.6938L37.4308 74.9789L70.0856 0.671718Z"
                                         fill="white" />
@@ -481,7 +568,7 @@
                             </span>
                             <img src="/assets/images/challenge-rectengle.png" alt="">
                         </div>
-                        <h3 class="">Together , there’s no challenge 
+                        <h3 class="">Together , there’s no challenge
                             we cannot solve
                         </h3>
                     </div>
@@ -492,30 +579,30 @@
                                 <h5 class="">As your strategic partner & advisor</h5>
                                 <span class=""></span>
                                 <p class="">
-                                    Pharetra convallis posuere morbi leo urna molestie. 
-                                    Viverra suspendisse potenti nullam ac tortor vitae. 
-                                    Morbi tincidunt augue interdum velit euismod in pellentesque massa. 
-                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec. 
+                                    Pharetra convallis posuere morbi leo urna molestie.
+                                    Viverra suspendisse potenti nullam ac tortor vitae.
+                                    Morbi tincidunt augue interdum velit euismod in pellentesque massa.
+                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec.
                                 </p>
                             </div>
                             <div class="content-grid-cards">
                                 <h5 class="">As your strategic partner & advisor</h5>
                                 <span class=""></span>
                                 <p class="">
-                                    Pharetra convallis posuere morbi leo urna molestie. 
-                                    Viverra suspendisse potenti nullam ac tortor vitae. 
-                                    Morbi tincidunt augue interdum velit euismod in pellentesque massa. 
-                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec. 
+                                    Pharetra convallis posuere morbi leo urna molestie.
+                                    Viverra suspendisse potenti nullam ac tortor vitae.
+                                    Morbi tincidunt augue interdum velit euismod in pellentesque massa.
+                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec.
                                 </p>
                             </div>
                             <div class="content-grid-cards">
                                 <h5 class="">As your strategic partner & advisor</h5>
                                 <span class=""></span>
                                 <p class="">
-                                    Pharetra convallis posuere morbi leo urna molestie. 
-                                    Viverra suspendisse potenti nullam ac tortor vitae. 
-                                    Morbi tincidunt augue interdum velit euismod in pellentesque massa. 
-                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec. 
+                                    Pharetra convallis posuere morbi leo urna molestie.
+                                    Viverra suspendisse potenti nullam ac tortor vitae.
+                                    Morbi tincidunt augue interdum velit euismod in pellentesque massa.
+                                    Eu nisl nunc mi ipsum faucibus vitae aliquet nec.
                                 </p>
                             </div>
                         </div>
@@ -524,24 +611,87 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
+            <dialog id="s-d" class="border">
+                <div class="main-search-modal ">
+                    <div class="search-input-div">
+                        <div class="select-lable">
+                            <label >
+                                <span>
+                                    <img src="/assets/images/down-arrow.png" alt="">
+                                </span>
+                                <select name="" id="">
+                                    <option value="">Task Catagory</option>
+                                    <option value="1">Beginner (Easy)</option>
+                                    <option value="2">Intermediate(Moderate)</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="search-lable">
+                            <label >
+                                <span>
+                                    <img src="/assets/images/Search.svg" alt="">
+                                </span>
+                                <input type="search" name="" id="">
+                            </label>
+                            <button id="s-c" class="">
+                                <img src="/assets/images/Close.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search-content-box">
+                        <div class="search-content">
+                            <img src="/assets/images/Team-smile.svg" alt="">
+                            <p class="">Enter keywords to see quick result</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </dialog>
+            
         </main>
     </div>
 
     <script>
-        const dialog = document.querySelector("dialog");
-        const showButton = document.querySelector("dialog + button");
-        const closeButton = document.querySelector("dialog button");
+        const dialog = document.getElementById("s-d");
+        const serchShow = document.getElementById("s-i");
+        const serchHide = document.getElementById("s-c");
 
         // "Show the dialog" button opens the dialog modally
-        showButton.addEventListener("click", () => {
+        serchShow.addEventListener("click", () => {
             dialog.showModal();
         });
 
         // "Close" button closes the dialog
-        closeButton.addEventListener("click", () => {
+        serchHide.addEventListener("click", () => {
             dialog.close();
         });
+
+        function toggleModal() {
+            const mainContainer = document.querySelector('.hire-section');
+            const dialog = mainContainer.querySelector("dialog");
+            const showButton = document.querySelectorAll(".hire-grid");
+            const closeButton = document.getElementById("close-btn");
+            const closeButtonLg = document.getElementById("close-btn-lg");
+
+            console.log(showButton);
+
+            showButton.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    dialog.showModal();
+                    console.log('modal shown');
+                });
+            });
+            closeButton.addEventListener('click', () => {
+                dialog.close();
+                console.log("clicked");
+            })
+            closeButtonLg.addEventListener('click', () => {
+                dialog.close();
+                console.log("clicked");
+            })
+        }
+        toggleModal('head')
     </script>
 </body>
 

@@ -8,9 +8,373 @@
   );
   opacity: 0.75;
 } */
-dialog{
-    margin: 1rem;
-    width: 100%;
-    height: 100dvh;
-    transition: .3s ease-in-out;
+.border {
+  border: 1px solid red;
+}
+.hire-section dialog {
+  margin: 1rem;
+  width: 100%;
+  height: 100dvh;
+  background: #1e293b;
+  transition: 0.3s ease-in-out;
+}
+.dialog-main {
+  display: grid;
+  /* flex-direction: column; */
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.hire-dialog-main .hire-dialog-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 12 / span 12;
+  padding: 2.5rem 3.75rem 14.375rem 3.75rem;
+}
+.hire-dialog-main .hire-dialog-form{
+  grid-column: span 12 / span 12;
+}
+.hire-dialog-img .hire-dialog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+.hire-dialog-content .content-close-btn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content-close-btn button{
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  gap: 5px;
+}
+.content-close-btn button p{
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.0625rem;
+}
+.dialog-content-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.dialog-content-header h4 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
+.hire-dialog-img {
+  background: url("/assets/images/hire-modal-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hire-dialog-content .dialog-content-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dialog-content-slider .content-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-content-slider .slider-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-content h6 {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #fff;
+  text-align: center;
+}
+.slider-content button {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+}
+.hire-dialog-form .form-close-btn {
+  align-items: center;
+  justify-content: flex-end;
+  /* padding: 2.1rem 3rem 0 0; */
+}
+.hire-dialog-form .form-close-btn button {
+  display: none;
+  align-items: center;
+  background: transparent;
+  border: none;
+  gap: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.hire-dialog-form .form-close-btn button p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.0625rem;
+}
+.hire-dialog-form .form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.hire-dialog-form .form-content h4 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+}
+.hire-dialog-form .form-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  /* padding-right: 5rem; */
+}
+.form-content form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-content form label span {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; 
+  color: #fff;
+  letter-spacing: 0.0625rem;
+}
+.form-content form label input,select{
+  /* width: 40.1rem; */
+  height: 4rem;
+}
+
+.form-content form button{
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+  color:  #fff;
+}
+
+@media screen and (min-width:1536px) {
+  .dialog-main {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 4rem;
+  }
+  .hire-dialog-img {
+    grid-column: span 7 / span 7;
+    padding: 8.5rem 3.75rem 14.375rem 3.75rem;
+  }
+  .hire-dialog-content .content-close-btn{
+    display: none;
+  }
+  .hire-dialog-form {
+    grid-column: span 5 / span 5;
+  }
+  .dialog-content-header h4 {
+    font-size: 3rem;
+    max-width: 40.8rem;
+  }
+  .slider-content h6 {
+    max-width: 32.5rem;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: flex;
+    padding: 2.1rem 3rem 0 0;
+  }
+  .hire-dialog-form .form-content form{
+    padding-right: 5rem;
+  }
+  .hire-dialog-form .form-close-btn button{
+    display: flex;
+  }
+  .hire-dialog-form .form-content h4 {
+    font-size: 3rem;
+  }
+  .form-content form label input,select{
+    height: 4rem;
+  }
+
+ 
+}
+
+@media screen and (min-width: 1280px) and (max-width:1535px) {
+  .dialog-main {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+  .hire-dialog-img {
+    grid-column: span 7 / span 7;
+    padding: 5.5rem 1.75rem 14.375rem 1.75rem;
+  }
+  .hire-dialog-form {
+    grid-column: span 5 / span 5;
+  }
+  .hire-dialog-content .content-close-btn{
+    display: none;
+  }
+  .dialog-content-header h4 {
+    font-size: 3rem;
+    max-width: 40.8rem;
+  }
+  .slider-content h6 {
+    max-width: 32.5rem;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: flex;
+    padding: 2.1rem 2rem 0 0;
+  }
+  .hire-dialog-form .form-content form{
+    padding-right: 2rem;
+  }
+  .hire-dialog-form .form-close-btn button{
+    display: flex;
+  }
+  .hire-dialog-form .form-content h4 {
+    font-size: 3rem;
+  }
+  .form-content form label input,select{
+    height: 4rem;
+  }
+}
+
+@media screen and (min-width:1024px)  and (max-width:1279px) {
+  .dialog-main {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+  .hire-dialog-img {
+    grid-column: span 7 / span 7;
+    padding: 5.5rem 1rem 14.375rem 1rem;
+  }
+  .hire-dialog-form {
+    grid-column: span 5 / span 5;
+  }
+  .hire-dialog-content .content-close-btn{
+    display: none;
+  }
+  .dialog-content-header h4 {
+    font-size: 2.5rem;
+    max-width: 40.8rem;
+  }
+  .slider-content h6 {
+    max-width: 21.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: flex;
+    padding: 2.1rem 2rem 0 0;
+  }
+  .hire-dialog-form .form-content form{
+    padding-right: 2rem;
+  }
+  .hire-dialog-form .form-content h4 {
+    font-size: 3rem;
+  }
+  .hire-dialog-form .form-close-btn button{
+    display: flex;
+  }
+  .form-content form label input,select{
+    height: 4rem;
+  }
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .hire-dialog-img{
+    padding: 2rem 1.5rem;
+  }
+  .slider-content h6 {
+    max-width: 36rem;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: none;
+  }
+  .dialog-content-header h4{
+    font-size: 3rem;
+  }
+  .hire-dialog-img .hire-dialog-content{
+    gap: 3rem;
+  }
+  .hire-dialog-form .form-content {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media screen and (min-width:640px ) and (max-width:767px) {
+  .hire-dialog-img{
+    padding: 2rem 1.5rem;
+  }
+  .slider-content h6 {
+    max-width: 20rem;
+    font-size: 1.5rem;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: none;
+  }
+  .dialog-content-header h4{
+    font-size: 2rem;
+  }
+  .hire-dialog-img .hire-dialog-content{
+    gap: 3rem;
+  }
+  .hire-dialog-form .form-content {
+    padding: 0rem 2rem;
+  }
+}
+
+@media screen and (min-width:420px) and (max-width:639px){
+  .hire-dialog-img{
+    display: none;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: flex;
+  }
+}
+@media screen and (min-width:320px) and (max-width:419px){
+  .hire-dialog-img{
+    display: none;
+  }
+  .hire-dialog-form .form-close-btn{
+    display: flex;
+  }
 }
