@@ -401,7 +401,7 @@
                         <h6 class="">Hire Designer</h6>
                     </div>
                 </div>
-                <dialog>
+                <dialog id="hireModal">
                     <div class="dialog-main ">
                         <div class="hire-dialog-img">
                             <div class="hire-dialog-content">
@@ -441,12 +441,13 @@
 
                         </div>
                         <div class="hire-dialog-form ">
-                            <div class="form-close-btn">
-                                <button autofocus id="close-btn-lg">
-                                    <p class="">Close</p>
-                                    <img src="/assets/images/Close.svg" alt="">
-                                </button>
-                            </div>
+                            <button autofocus id="close-btn-lg">
+                                <p class="">Close</p>
+                                <img src="/assets/images/Close.svg" alt="">
+                            </button>
+                            <!-- <div class="form-close-btn">
+                                
+                            </div> -->
                             <div class="form-content">
                                 <h4 class="">Hire your Team</h4>
                                 <form action="#">
@@ -480,7 +481,8 @@
                                     </label>
                                     <label>
                                         <span>Shopify Store Url</span>
-                                        <textarea name="textarea" id="modal-comment-box" cols="30" rows="10"></textarea>
+                                        <textarea class="text-area" name="textarea" id="modal-comment-box" cols="30"
+                                            rows="10"></textarea>
                                     </label>
                                     <button class="free-quote-btn">
                                         Get a Free Quote
@@ -612,11 +614,14 @@
                     </div>
                 </div>
             </section>
+
+
+
             <dialog id="s-d" class="border">
                 <div class="main-search-modal ">
                     <div class="search-input-div">
                         <div class="select-lable">
-                            <label >
+                            <label>
                                 <span>
                                     <img src="/assets/images/down-arrow.png" alt="">
                                 </span>
@@ -628,7 +633,7 @@
                             </label>
                         </div>
                         <div class="search-lable">
-                            <label >
+                            <label>
                                 <span>
                                     <img src="/assets/images/Search.svg" alt="">
                                 </span>
@@ -646,9 +651,9 @@
                         </div>
                     </div>
                 </div>
-               
+
             </dialog>
-            
+
         </main>
     </div>
 
@@ -675,6 +680,13 @@
             const closeButtonLg = document.getElementById("close-btn-lg");
 
             console.log(showButton);
+
+            function removeBackdrop(modalId) {
+                var modalElement = document.getElementById(modalId);
+                if (modalElement) {
+                    modalElement.setAttribute("data-backdrop", "false");
+                }
+            }
 
             showButton.forEach((btn) => {
                 btn.addEventListener("click", () => {
